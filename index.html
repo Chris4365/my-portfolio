@@ -1,0 +1,229 @@
+<!--
+One-page Dark-Theme Portfolio (placeholder)
+Filename: PlaceholderPortfolio_onepage.html
+Instructions:
+ - Replace "PLACEHOLDER NAME" with your name in the <h1> and the meta title
+ - Replace the "Your Art Here" blocks by swapping the <figure> contents with <img src="your-image.jpg" alt="Title"> or background-image styles
+ - To preview on your phone: save this file as .html and open it in your phone browser, or paste into Replit/Glitch and open the live preview.
+ - To deploy quickly from your phone: use GitHub Pages, Netlify, or Vercel. I can show step-by-step.
+--><!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PLACEHOLDER NAME | Digital Artist</title>
+  <meta name="description" content="Portfolio — digital artist showcase">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- blank favicon -->
+  <style>
+    /* CSS reset (light) */
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.4;background:#0b0f12;color:#e6eef8;-webkit-font-smoothing:antialiased}:root{
+  --bg:#0b0f12;
+  --panel:#0f1720;
+  --muted:#98a4b2;
+  --accent:#8be9fd;
+  --accent-2:#7c5cff;
+  --glass: rgba(255,255,255,0.03);
+}
+
+a{color:var(--accent);text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px}
+
+/* Header / Hero */
+header{padding:48px 0 24px}
+.hero{display:flex;gap:20px;align-items:center;justify-content:space-between}
+.hero-left{flex:1}
+.tag{font-size:14px;color:var(--muted);letter-spacing:1px}
+h1{margin:6px 0 8px;font-size:28px}
+p.lead{color:var(--muted);margin:0 0 18px}
+.cta{display:inline-block;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#031016;font-weight:600}
+
+/* About */
+.about{display:flex;gap:18px;align-items:center;margin:36px 0}
+.avatar{flex:0 0 110px;height:110px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.03)}
+.avatar img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+.about-text{flex:1}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:28px 0}
+@media(min-width:760px){.gallery{grid-template-columns:repeat(3,1fr)}}
+figure.tile{background:var(--panel);border-radius:12px;padding:12px;min-height:140px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.03);position:relative;overflow:hidden}
+figure.tile .placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--muted)}
+figure.tile .placeholder svg{opacity:0.75}
+figure.tile:hover{transform:translateY(-6px);transition:transform .22s cubic-bezier(.2,.8,.2,1)}
+
+/* Modal / Lightbox */
+.lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,10,0.7);z-index:60;padding:20px}
+.lightbox.open{display:flex}
+.lightbox .content{max-width:900px;max-height:90vh;width:100%;border-radius:12px;background:var(--panel);padding:12px;display:flex;flex-direction:column}
+.lightbox img{max-width:100%;max-height:78vh;align-self:center;border-radius:8px}
+.close-btn{margin-left:auto;padding:6px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+
+/* Contact */
+.contact{margin:24px 0;padding:16px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);border:1px solid rgba(255,255,255,0.03)}
+.contact a{display:inline-block;margin-top:8px}
+
+footer{padding:18px 0;color:var(--muted);font-size:13px;text-align:center}
+
+/* small utilities */
+.flex{display:flex;gap:12px;align-items:center}
+.muted{color:var(--muted)}
+.pill{padding:6px 10px;border-radius:999px;background:var(--glass);border:1px solid rgba(255,255,255,0.02)}
+
+/* smooth scroll behavior */
+html{scroll-behavior:smooth}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="hero">
+        <div class="hero-left">
+          <div class="tag">PORTFOLIO</div>
+          <h1>PLACEHOLDER NAME</h1>
+          <p class="lead">Digital Artist • Visual Storyteller — creating concept art, character design, and digital illustrations tailored for games and media.</p>
+          <a href="#gallery" class="cta">View Portfolio</a>
+        </div>
+        <div class="flex" style="align-items:flex-start">
+          <div class="pill muted">Open for hire</div>
+        </div>
+      </nav>
+    </header><section class="about" id="about">
+  <div class="avatar" aria-hidden="true">
+    <!-- Replace with your photo: <img src="you.jpg" alt="Your Name"> -->
+    <svg width="72" height="72" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="23" height="23" rx="6" stroke="rgba(255,255,255,0.03)"/><path d="M12 12a3 3 0 100-6 3 3 0 000 6zM5 20a7 7 0 0114 0" stroke="rgba(255,255,255,0.06)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="about-text">
+    <h3>About the artist</h3>
+    <p class="muted">Concise bio: say where you're based (optional), what you specialise in, and the tools you use (e.g., Procreate, Photoshop, Blender). Keep it 2–4 lines so employers get the essentials at a glance.</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 style="margin:0 0 12px">Portfolio</h2>
+  <p class="muted" style="margin:0 0 18px">Tap any tile to preview. Replace each tile with your artwork image files when ready.</p>
+
+  <div class="gallery">
+    <!-- Repeatable tile (replace contents with <img src="...">) -->
+    <figure class="tile" data-title="Artwork 1">
+      <div class="placeholder">
+        <svg width="60" height="40" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="1" width="118" height="78" rx="8" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/><path d="M10 60 L35 30 L60 52 L86 20 L110 55" stroke="rgba(255,255,255,0.06)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <strong>Your Art Here</strong>
+        <span class="muted">Artwork title • medium • year</span>
+      </div>
+    </figure>
+
+    <figure class="tile" data-title="Artwork 2">
+      <div class="placeholder">
+        <svg width="60" height="40" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="1" width="118" height="78" rx="8" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/><path d="M10 60 L35 30 L60 52 L86 20 L110 55" stroke="rgba(255,255,255,0.06)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <strong>Your Art Here</strong>
+        <span class="muted">Artwork title • medium • year</span>
+      </div>
+    </figure>
+
+    <figure class="tile" data-title="Artwork 3">
+      <div class="placeholder">
+        <svg width="60" height="40" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="1" width="118" height="78" rx="8" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/><path d="M10 60 L35 30 L60 52 L86 20 L110 55" stroke="rgba(255,255,255,0.06)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <strong>Your Art Here</strong>
+        <span class="muted">Artwork title • medium • year</span>
+      </div>
+    </figure>
+
+    <figure class="tile" data-title="Artwork 4">
+      <div class="placeholder">
+        <svg width="60" height="40" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="1" width="118" height="78" rx="8" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/><path d="M10 60 L35 30 L60 52 L86 20 L110 55" stroke="rgba(255,255,255,0.06)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <strong>Your Art Here</strong>
+        <span class="muted">Artwork title • medium • year</span>
+      </div>
+    </figure>
+
+    <figure class="tile" data-title="Artwork 5">
+      <div class="placeholder">
+        <svg width="60" height="40" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="1" width="118" height="78" rx="8" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/><path d="M10 60 L35 30 L60 52 L86 20 L110 55" stroke="rgba(255,255,255,0.06)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <strong>Your Art Here</strong>
+        <span class="muted">Artwork title • medium • year</span>
+      </div>
+    </figure>
+
+    <figure class="tile" data-title="Artwork 6">
+      <div class="placeholder">
+        <svg width="60" height="40" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="1" width="118" height="78" rx="8" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/><path d="M10 60 L35 30 L60 52 L86 20 L110 55" stroke="rgba(255,255,255,0.06)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <strong>Your Art Here</strong>
+        <span class="muted">Artwork title • medium • year</span>
+      </div>
+    </figure>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h3>Contact</h3>
+  <p class="muted">Interested in hiring or commissioning? Reach out:</p>
+  <a href="mailto:your.email@example.com" class="pill">your.email@example.com</a>
+  <div style="margin-top:12px" class="muted">Or connect on: <a href="#">Instagram</a> • <a href="#">ArtStation</a> • <a href="#">LinkedIn</a></div>
+</section>
+
+<footer>
+  © <span id="year"></span> PLACEHOLDER NAME — Digital Artist
+</footer>
+
+  </div>  <!-- Lightbox markup -->  <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
+    <div class="content">
+      <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px">
+        <strong id="lb-title"></strong>
+        <button id="lb-close" class="close-btn">Close</button>
+      </div>
+      <div id="lb-body" style="display:flex;align-items:center;justify-content:center;min-height:160px">
+        <!-- when you replace placeholders with images, this will show the image -->
+        <img id="lb-img" alt="Preview" src="" style="display:none"/>
+        <div id="lb-note" class="muted">Preview placeholder. Replace tiles with real images and the lightbox will show them here.</div>
+      </div>
+    </div>
+  </div>  <script>
+    // small JS: enable tile click to open lightbox if an <img> exists
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const tiles = Array.from(document.querySelectorAll('figure.tile'));
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const lbNote = document.getElementById('lb-note');
+    const lbTitle = document.getElementById('lb-title');
+    const lbClose = document.getElementById('lb-close');
+
+    tiles.forEach(tile=>{
+      tile.addEventListener('click', ()=>{
+        const img = tile.querySelector('img');
+        const title = tile.getAttribute('data-title')||'';
+        lbTitle.textContent = title;
+        if(img && img.src){
+          lbImg.src = img.src;
+          lbImg.style.display = 'block';
+          lbNote.style.display = 'none';
+        } else {
+          lbImg.style.display = 'none';
+          lbNote.style.display = 'block';
+        }
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden','false');
+      })
+    });
+
+    lbClose.addEventListener('click', ()=>{
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden','true');
+      lbImg.src = '';
+    });
+
+    // close on outside click
+    lightbox.addEventListener('click', (e)=>{
+      if(e.target === lightbox) lbClose.click();
+    });
+
+    // Tip in comments: to replace a tile with a real image, change structure like:
+    // <figure class="tile" data-title="Title"><img src="art1.jpg" alt="Title" style="width:100%;height:auto;border-radius:8px"></figure>
+
+  </script></body>
+</html>
